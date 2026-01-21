@@ -3,13 +3,14 @@ import { Head } from 'minista'
 import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
+import { ReactComponent as LogoBigSvg } from '@/assets/logos/logo-big.svg'
 
 export default (props) => {
   const { children, title, url } = props
 
   return (
     <>
-      <Head htmlAttributes={{ lang: 'en' }}>
+      <Head htmlAttributes={{ lang: 'en', class: 'is-lock'}}>
         <title>TimaKaroche | {title}</title>
         <script src="/src/main.js" type="module" />
         <link
@@ -31,6 +32,10 @@ export default (props) => {
         />
         <link rel="manifest" href="/favicons/site.webmanifest" />
       </Head>
+      <div className="preloader" data-js-preloader="">
+        <LogoBigSvg className="preloader__logo" />
+        <div className="preloader__circle"></div>
+      </div>
       <Header url={url} />
       <Content>{children}</Content>
       <Footer />

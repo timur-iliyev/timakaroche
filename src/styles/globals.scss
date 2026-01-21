@@ -89,3 +89,58 @@ a {
 :focus-visible {
   @include focus-visible;
 }
+
+.preloader {
+  @include flex-center;
+
+  position: fixed;
+  z-index: 998;
+  inset: 0;
+  background-color: var(--color-accent-secondary);
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  pointer-events: none;
+
+  &__logo {
+    position: absolute;
+    z-index: 999;
+    width: fluid(700, 300);
+    fill: var(--color-accent-secondary);
+  }
+
+  &__circle {
+    @include abs-cover;
+
+    background-color: var(--color-accent);
+    animation-name: ellipse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes ellipse {
+    0% {
+      clip-path: ellipse(0% 0% at 50% 50%);
+    }
+
+    100% {
+      clip-path: ellipse(250% 60% at 50% 50%);
+    }
+  }
+}
