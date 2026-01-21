@@ -10,7 +10,7 @@ export default (props) => {
 
   return (
     <>
-      <Head htmlAttributes={{ lang: 'en', class: 'is-lock'}}>
+      <Head htmlAttributes={{ lang: 'en', class: 'is-lock' }}>
         <title>TimaKaroche | {title}</title>
         <script src="/src/main.js" type="module" />
         <link
@@ -33,8 +33,8 @@ export default (props) => {
         <link rel="manifest" href="/favicons/site.webmanifest" />
       </Head>
       <div className="preloader" data-js-preloader="">
-        <LogoBigSvg className="preloader__logo" />
         <div className="preloader__circle"></div>
+        <LogoBigSvg className="preloader__logo" />
       </div>
       <Header url={url} />
       <Content>{children}</Content>

@@ -5,6 +5,20 @@
   min-height: 100svh;
   padding-top: fluid(150, 80);
 
+  animation-name: hero-fade-out;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0 60vh;
+
+  @keyframes hero-fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   &__inner {
     flex-grow: 1;
     background:

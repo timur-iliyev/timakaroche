@@ -14,8 +14,10 @@ export default class Preloader {
   }
 
   onAnimationEnd = (event) => {
-    if (event.animationName === 'fade-out') {
-      document.documentElement.classList.remove(this.stateClasses.isLock)
+    if (event.animationName === 'preloader-fade-out') {
+      document.documentElement.classList.remove(
+        this.stateClasses.isLock
+      )
     }
   }
 
