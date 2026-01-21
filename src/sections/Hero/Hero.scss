@@ -1,3 +1,23 @@
 .hero {
-  min-height: 100lvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding-top: fluid(150, 80);
+
+  &__inner {
+    flex-grow: 1;
+    background:
+      var(--bg-mask),
+      url('../../assets/bg.svg') 100% / cover,
+      var(--color-bg-dark);
+    background-repeat: no-repeat;
+  }
+
+  &__logo {
+    @include abs-center;
+
+    width: fluid(700, 300);
+    fill: var(--color-accent);
+  }
 }
