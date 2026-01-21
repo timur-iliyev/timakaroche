@@ -3,8 +3,8 @@
   --color-bg: hsl(0deg 0% 5%);
   --color-bg-light: hsl(0deg 0% 10%);
 
-  --color-accent: oklch(75% 0.25 290);
-  --color-accent-secondary: oklch(75% 0.105 220);
+  --color-accent: oklch(75% 0.25 290deg);
+  --color-accent-secondary: oklch(25% 0.25 290deg);
 
   --color-text: hsl(0deg 0% 95%);
   --color-text-secondary: hsl(0deg 0% 70%);
@@ -28,10 +28,18 @@
     var(--color-accent-secondary)
   );
 
+  --bg-mask: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--color-bg-dark) 60%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg-dark) 75%, transparent) 40%,
+    color-mix(in srgb, var(--color-bg-dark) 100%, transparent) 70%,
+    var(--color-bg-dark) 100%
+  );
+
   --border: 1px solid var(--color-border);
   --border-top: 1px solid var(--color-border-top);
 
-  --border-radius: 8px;
+  --border-radius: 0.5rem;
 
   --shadow-s:
     inset 0 1px 2px hsla(0deg, 0%, 100%, 0.188),
@@ -54,21 +62,23 @@
     )};
   --container-width: #{fluid($desktop-width, $min-viewport-width)};
 
-  --section-padding-y: #{fluid(
-      $section-padding-y-desktop,
-      $section-padding-y-mobile
+  --section-margin-y: #{fluid(
+      $section-margin-y-desktop,
+      $section-margin-y-mobile
     )};
   --section-gap: #{fluid($section-gap-desktop, $section-gap-mobile)};
 
   --transition-duration: 0.2s;
   --transition-duration-long: 0.4s;
 
-  &.is-light-theme {
+  // ! class .l means Light Theme. Is used for development purpose, will be changed
+  &.l {
     --color-bg-dark: hsl(0deg 0% 90%);
     --color-bg: hsl(0deg 0% 95%);
     --color-bg-light: hsl(0deg 0% 100%);
 
-  --color-accent: oklch(25% 0.25 290);
+    --color-accent: oklch(25% 0.25 290deg);
+    --color-accent-secondary: oklch(75% 0.25 290deg);
 
     --color-text: hsl(0deg 0% 5%);
     --color-text-secondary: hsl(0deg 0% 30%);
