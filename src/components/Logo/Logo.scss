@@ -1,4 +1,7 @@
-.logo__image {
-  width: fluid(73, 37);
-  height: fluid(88, 44);
+.logo {
+  &__image {
+    width: fluid(73, 37);
+    height: fluid(88, 44);
+    fill: var(--color-accent);
+  }
 }

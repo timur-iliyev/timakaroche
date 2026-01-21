@@ -1,5 +1,5 @@
 .button {
-  --buttonTextColor: var(--color-white);
+  --buttonTextColor: white;
   --buttonBgColor: var(--color-accent);
   --buttonSpacing: 8px;
   --buttonSpacingX: calc(var(--buttonSpacing) * 2);
@@ -7,24 +7,23 @@
   @include flex-center(true);
 
   column-gap: var(--buttonSpacing);
-
-  @include from-tablet {
-    height: 44px;
-  }
-
+  height: 44px;
   padding: var(--buttonSpacing) var(--buttonSpacingX);
+  font-weight: 500;
   color: var(--buttonTextColor);
   background-color: var(--buttonBgColor);
-  border: var(--border);
-  border-color: currentColor;
+  border: none;
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-l);
   user-select: none;
+
+  &:active {
+    box-shadow: var(--shadow-s);
+  }
 
   @include hover {
     --buttonTextColor: var(--color-accent);
-    --buttonBgColor: var(--color-white);
-
-    border-color: transparent;
+    --buttonBgColor: white;
   }
 
   &:disabled {
@@ -38,10 +37,8 @@
   &--transparent {
     --buttonBgColor: transparent;
 
-    border: none;
-
     @include hover {
-      --buttonTextColor: var(--color-accent-light);
+      --buttonTextColor: var(--color-accent);
       --buttonBgColor: transparent;
     }
   }

@@ -17,9 +17,9 @@ export default (props) => {
         <span
           className="animated-link__char"
           aria-hidden="true"
-          style={{ transitionDelay: `${index * 0.01}s` }}
+          style={{ transitionDelay: `${index * 0.02}s` }}
         >
-          {char === ' ' ? '\u00A0' : char}
+          {char === ' ' ? '\u00A0' : char.toUpperCase()}
         </span>
       ))}
     </a>

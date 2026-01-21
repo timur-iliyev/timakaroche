@@ -1,5 +1,5 @@
 .burger-button {
-  --burgerButtonTextColor: var(--color-white);
+  --burgerButtonTextColor: white;
   --burgerButtonBgColor: var(--color-accent);
 
   @include flex-center(true);
@@ -8,20 +8,22 @@
   padding: 0;
   color: var(--burgerButtonTextColor);
   background-color: var(--burgerButtonBgColor);
-  border: var(--border);
-  border-color: currentColor;
+  border: none;
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-l);
+
+  &:active {
+    box-shadow: var(--shadow-s);
+  }
 
   @include hover {
     --burgerButtonTextColor: var(--color-accent);
-    --burgerButtonBgColor: var(--color-white);
-
-    border-color: transparent;
+    --burgerButtonBgColor: white;
   }
 
   &.is-active {
     --burgerButtonTextColor: var(--color-accent);
-    --burgerButtonBgColor: var(--color-white);
+    --burgerButtonBgColor: var(--color-bg-light);
 
     .burger-button__line {
       stroke-dasharray: 90 207;

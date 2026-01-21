@@ -4,10 +4,11 @@
   overflow-y: hidden;
   display: inline-block;
   height: max-content;
-  text-shadow: var(--color-accent-light) 0 3ex;
-  color: var(--color-white);
+  font-weight: 500;
+  color: var(--color-text);
+  text-shadow: var(--color-accent) 0 3ex;
 
-  @include hover {
+  @include hover(false) {
     .animated-link__char {
       --charPositionY: -3ex;
     }
