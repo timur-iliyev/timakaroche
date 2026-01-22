@@ -4,7 +4,6 @@
   flex-direction: column;
   min-height: 100svh;
   padding-top: fluid(150, 80);
-
   animation-name: hero-fade-out;
   animation-fill-mode: both;
   animation-timeline: scroll();
@@ -14,6 +13,7 @@
     0% {
       opacity: 1;
     }
+
     100% {
       opacity: 0;
     }

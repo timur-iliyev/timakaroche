@@ -16,7 +16,7 @@
 
   &__char {
     display: inline-block;
-    transition: translate var(--transition-duration-long) ease;
+    transition: translate var(--duration-long) ease;
     translate: 0 var(--charPositionY);
   }
 }

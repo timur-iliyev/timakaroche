@@ -1,8 +1,15 @@
 import './Section.scss'
+import getIdFromString from '@/utils/getIdFromString'
 import clsx from 'clsx'
 
 export default (props) => {
-  const { className, title, titleId, description, children } = props
+  const {
+    className,
+    title,
+    titleId = getIdFromString(props.title),
+    description,
+    children,
+  } = props
 
   return (
     <section

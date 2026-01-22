@@ -36,8 +36,8 @@
       width: 16px;
       height: 2px;
       background-color: var(--color-white);
-      border-radius: var(--border-radius);
-      transition-duration: var(--transition-duration);
+      border-radius: var(--border-radius-s);
+      transition-duration: var(--duration);
     }
 
     &::after {
@@ -48,7 +48,7 @@
   &__content {
     display: grid;
     grid-template-rows: 0fr;
-    transition-duration: var(--transition-duration-long);
+    transition-duration: var(--duration-long);
 
     &-body {
       overflow: hidden;

@@ -4,12 +4,12 @@
   width: fit-content;
   padding: 10px;
   border: var(--border);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-s);
 
   &__button {
     position: relative;
     cursor: pointer;
-    transition-duration: var(--transition-duration);
+    transition-duration: var(--duration);
     user-select: none;
 
     &.is-active {

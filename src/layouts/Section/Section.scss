@@ -9,7 +9,6 @@
 
   &__body {
     display: flex;
-    flex-direction: column;
-    gap: fluid(16, 12);
+    gap: 1.25rem;
   }
 }

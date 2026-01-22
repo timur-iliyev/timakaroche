@@ -9,7 +9,7 @@
   color: var(--burgerButtonTextColor);
   background-color: var(--burgerButtonBgColor);
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-s);
   box-shadow: var(--shadow-l);
 
   &:active {
@@ -38,9 +38,9 @@
 
   &__line {
     transition:
-      stroke-dasharray var(--transition-duration-long)
+      stroke-dasharray var(--duration-long)
         cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset var(--transition-duration-long)
+      stroke-dashoffset var(--duration-long)
         cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
     stroke: currentColor;
