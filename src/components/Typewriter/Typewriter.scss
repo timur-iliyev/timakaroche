@@ -1,0 +1,13 @@
+.typewriter {
+  &__inner {
+    padding-right: 0.125rem;
+    border-right: 3px solid transparent;
+    animation: 1.2s cursor 10 ease;
+
+    @keyframes cursor {
+      to {
+        border-right-color: var(--color-accent);
+      }
+    }
+  }
+}
