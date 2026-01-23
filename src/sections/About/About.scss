@@ -1,0 +1,29 @@
+.about {
+  & .section__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  & .accordion__summary {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 60%;
+
+      @include square-size(fluid(64, 32));
+
+      background-image: url('../../assets/images/about/click.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+}
