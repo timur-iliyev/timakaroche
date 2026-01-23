@@ -1,10 +1,19 @@
 import './Accordion.scss'
+import clsx from 'clsx'
+import getIdFromString from '@/utils/getIdFromString'
 
 export default (props) => {
-  const { title, id, name, isOpen, children } = props
+  const {
+    className,
+    title,
+    id = getIdFromString(props.title),
+    name,
+    isOpen = false,
+    children,
+  } = props
 
   return (
-    <div className="accordion">
+    <div className={clsx(className, 'accordion')}>
       <details
         className="accordion__details"
         name={name}

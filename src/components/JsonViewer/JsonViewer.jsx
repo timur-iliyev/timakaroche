@@ -44,7 +44,7 @@ const renderObject = (obj, depth = 0) => {
         const isNotLast = index !== entries.length - 1
 
         return (
-          <span key={index}>
+          <>
             {`\n${nextIndent}`}
             <span className="json-text__key">"{key}"</span>
             <span className="json-text__symbol">{`:`}</span>
@@ -53,7 +53,7 @@ const renderObject = (obj, depth = 0) => {
             {isNotLast && (
               <span className="json-text__symbol">,</span>
             )}
-          </span>
+          </>
         )
       })}
       {`\n${indent}`}
@@ -73,13 +73,13 @@ const renderArray = (array, depth = 0) => {
         const isNotLast = index !== array.length - 1
 
         return (
-          <span key={index}>
+          <>
             {`\n${nextIndent}`}
             {renderValue(item, depth + 1)}
             {isNotLast && (
               <span className="json-text__symbol">,</span>
             )}
-          </span>
+          </>
         )
       })}
       {`\n${indent}`}
@@ -101,7 +101,7 @@ export default (props) => {
           const isNotLast = index !== dataEntries.length - 1
 
           return (
-            <span key={index}>
+            <>
               {`\n  `}
               <span className="json-text__key">"{key}"</span>
               <span className="json-text__symbol">{`:`}</span>
@@ -110,7 +110,7 @@ export default (props) => {
               {isNotLast && (
                 <span className="json-text__symbol">,</span>
               )}
-            </span>
+            </>
           )
         })}
         {`\n`}
