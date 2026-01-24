@@ -1,0 +1,26 @@
+.technology-badge {
+  @include flex-center;
+
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  &__body {
+    @include flex-center;
+    @include square-size(fluid(100, 40));
+
+    padding: fluid(16, 8);
+    background-image: var(--gradient-bg);
+    box-shadow: var(--shadow-l);
+    border: var(--border);
+    border-radius: 50%;
+
+    @include hover {
+      background-image: var(--gradient-bg-hover);
+    }
+  }
+
+  &__logo {
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+}
