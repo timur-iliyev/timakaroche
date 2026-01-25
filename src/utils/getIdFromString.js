@@ -1,3 +1,3 @@
 export default function getIdFromString(string) {
-  return string.toLowerCase().replaceAll(' ', '-').replace('.', '')
+  return string.toLowerCase().replaceAll(' ', '-').replaceAll('.', '')
 }
