@@ -1,0 +1,74 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+  @include from-tablet {
+    grid-template-columns: 1fr;
+  }
+
+  &__preview {
+    &-button {
+      overflow: hidden;
+      padding: 0;
+      border: var(--border);
+      border-radius: var(--border-radius-s);
+      box-shadow: var(--shadow-l);
+    }
+
+    &-image {
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__stack-list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(fluid(80, 60), 1fr)
+    );
+    gap: 0.75rem;
+  }
+
+  &__dialog {
+    width: 90vw;
+    padding: 0;
+    background-color: var(--color-bg-light);
+    border: none;
+    border-radius: var(--border-radius-m);
+    box-shadow: var(--shadow-l);
+
+    &::backdrop {
+      background-color: rgba(0 0 0 / 0.5);
+      backdrop-filter: blur(2px);
+    }
+
+    &-header {
+      display: flex;
+      justify-content: end;
+      padding: 1rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+
+    &-item {
+      align-self: center;
+
+      &-title {
+        margin: 0 0 1rem 1rem;
+      }
+    }
+  }
+}
