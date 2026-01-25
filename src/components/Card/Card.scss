@@ -1,14 +1,8 @@
 .card {
-  @include flex-center;
-
-  flex-direction: column;
-  padding: 2rem;
+  display: grid;
+  padding: 1.5rem;
   background-image: var(--gradient-bg);
   border-radius: var(--border-radius-m);
-
-  @include hover {
-    background-image: var(--gradient-bg-hover);
-  }
 
   &-layer-1 {
     box-shadow: var(--shadow-s);
@@ -20,5 +14,11 @@
 
   &-layer-3 {
     box-shadow: var(--shadow-l);
+  }
+
+  &--hoverable {
+    @include hover {
+      background-image: var(--gradient-bg-hover);
+    }
   }
 }
