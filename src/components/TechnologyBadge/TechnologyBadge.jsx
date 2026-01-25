@@ -14,6 +14,7 @@ export default (props) => {
           alt={technologyName}
           className="technology-badge__logo"
           title={technologyName}
+          loading="lazy"
         />
       </div>
       <figcaption className="technology-badge__caption">

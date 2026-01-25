@@ -2,17 +2,16 @@
   @include flex-center;
 
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 0.25rem;
 
   &__body {
     @include flex-center;
-    @include square-size(fluid(100, 40));
+    @include square-size(fluid(60, 24));
 
-    padding: fluid(16, 8);
+    padding: fluid(16, 4);
     background-image: var(--gradient-bg);
-    box-shadow: var(--shadow-l);
-    border: var(--border);
     border-radius: 50%;
+    box-shadow: var(--shadow-l);
 
     @include hover {
       background-image: var(--gradient-bg-hover);
