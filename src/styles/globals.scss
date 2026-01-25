@@ -1,4 +1,6 @@
 html {
+  scroll-padding-top: 15vh;
+
   &.is-lock {
     overflow: hidden;
   }
@@ -34,25 +36,24 @@ h6,
 
 h1,
 .h1 {
-  font-size: 24px;
   font-weight: 700;
 }
 
 h2,
 .h2 {
-  font-size: 18px;
+  font-size: fluid(40, 24);
   font-weight: 700;
 }
 
 h3,
 .h3 {
-  font-size: 16px;
+  font-size: fluid(32, 20);
   font-weight: 700;
 }
 
 h4,
 .h4 {
-  font-size: 16px;
+  font-size: fluid(18, 14);
   font-weight: 600;
 }
 
