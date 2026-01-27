@@ -3,6 +3,8 @@
   --color-bg: hsl(0deg 0% 5%);
   --color-bg-light: hsl(0deg 0% 10%);
 
+  --color-white: hsl(0deg 0% 95%);
+
   --color-accent: oklch(75% 0.25 290deg);
   --color-accent-secondary: oklch(25% 0.25 290deg);
 
@@ -28,7 +30,7 @@
     var(--color-accent-secondary)
   );
 
-  --bg-mask: radial-gradient(
+  --bg-overlay: radial-gradient(
     ellipse at center,
     color-mix(in srgb, var(--color-bg-dark) 60%, transparent) 0%,
     color-mix(in srgb, var(--color-bg-dark) 75%, transparent) 40%,
@@ -72,6 +74,8 @@
 
   --duration: 0.2s;
   --duration-long: 0.4s;
+
+  --hero-logo-width: #{fluid(700, 300)};
 
   // ! class .l means Light Theme. Is used for development purpose, will be changed
   &.l {

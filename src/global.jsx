@@ -33,7 +33,7 @@ export default (props) => {
         <link rel="manifest" href="/favicons/site.webmanifest" />
       </Head>
       <div className="preloader" data-js-preloader="">
-        <div className="preloader__circle"></div>
+        <div className="preloader__ellipse"></div>
         <LogoBigSvg className="preloader__logo" />
       </div>
       <Header url={url} />

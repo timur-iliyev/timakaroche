@@ -7,7 +7,7 @@
   animation-name: scrolling-header;
   animation-fill-mode: both;
   animation-timeline: scroll();
-  animation-range: 0 30vh;
+  animation-range: 0 60vh;
 
   @keyframes scrolling-header {
     to {
@@ -33,7 +33,7 @@
     width: 100%;
     height: 100%;
     background:
-      var(--bg-mask),
+      var(--bg-overlay),
       url('../../assets/bg.svg') 50% / cover,
       var(--color-bg-dark);
     background-repeat: no-repeat;

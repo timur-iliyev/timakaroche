@@ -95,8 +95,9 @@ a {
   @include flex-center;
 
   position: fixed;
-  z-index: 998;
+  z-index: 900;
   inset: 0;
+  min-height: 100svh;
   background-color: var(--color-accent-secondary);
   opacity: 0;
   animation-name: preloader-fade-out;
@@ -118,7 +119,7 @@ a {
     }
   }
 
-  &__circle {
+  &__ellipse {
     @include abs-cover;
 
     background-color: var(--color-accent);
@@ -140,8 +141,8 @@ a {
 
   &__logo {
     position: absolute;
-    z-index: 999;
-    width: fluid(700, 300);
+    z-index: 1000;
+    width: var(--hero-logo-width);
     fill: var(--color-accent-secondary);
   }
 }

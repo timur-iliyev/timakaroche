@@ -1,5 +1,5 @@
 .burger-button {
-  --burgerButtonTextColor: white;
+  --burgerButtonTextColor: var(--color-white);
   --burgerButtonBgColor: var(--color-accent);
 
   @include flex-center(true);
@@ -18,7 +18,7 @@
 
   @include hover {
     --burgerButtonTextColor: var(--color-accent);
-    --burgerButtonBgColor: white;
+    --burgerButtonBgColor: var(--color-white);
   }
 
   &.is-active {
