@@ -38,7 +38,6 @@ class Tabs extends BaseComponent {
     this.limitTabsIndex = this.buttonElements.length - 1
 
     this.bindEvents()
-    setTimeout(this.bindObservers, 300)
   }
 
   render() {
