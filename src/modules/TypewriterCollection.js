@@ -13,13 +13,10 @@ export default class TypewriterCollection {
     this.typewriterElements = document.querySelectorAll(
       this.selectors.root
     )
-    this.typewriterObserver = new IntersectionObserver(
-      this.onTypewriterObserver,
-      { ...this.observerConfig }
-    )
-    this.typewriterElements.forEach((entry) => {
-      this.typewriterObserver.observe(entry)
-    })
+
+    if (this.typewriterElements.length > 0) {
+      this.bindEvents()
+    }
   }
 
   animateText(element, renderedText) {
@@ -44,7 +41,46 @@ export default class TypewriterCollection {
       if (isIntersecting) {
         this.animateText(target, renderedText)
         this.typewriterObserver.unobserve(target)
+        this.observedCount--
+      }
+
+      if (this.observedCount === 0) {
+        this.unbindObservers()
       }
     })
+  }
+
+  bindObservers() {
+    this.observedCount = this.typewriterElements.length
+    this.typewriterObserver = new IntersectionObserver(
+      this.onTypewriterObserver,
+      { ...this.observerConfig }
+    )
+    this.typewriterElements.forEach((entry) => {
+      this.typewriterObserver.observe(entry)
+    })
+  }
+
+  unbindObservers() {
+    this.typewriterObserver.disconnect()
+  }
+
+  onPreloaderClosed = () => {
+    this.bindObservers()
+    this.unbindEvents()
+  }
+
+  bindEvents() {
+    document.addEventListener(
+      'preloaderClosed',
+      this.onPreloaderClosed
+    )
+  }
+
+  unbindEvents() {
+    document.removeEventListener(
+      'preloaderClosed',
+      this.onPreloaderClosed
+    )
   }
 }

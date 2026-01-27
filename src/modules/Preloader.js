@@ -18,11 +18,24 @@ export default class Preloader {
       document.documentElement.classList.remove(
         this.stateClasses.isLock
       )
+      document.dispatchEvent(
+        new CustomEvent('preloaderClosed', {
+          bubbles: true,
+        })
+      )
+      this.unbindEvents()
     }
   }
 
   bindEvents() {
     this.rootElement.addEventListener(
+      'animationend',
+      this.onAnimationEnd
+    )
+  }
+
+  unbindEvents() {
+    this.rootElement.removeEventListener(
       'animationend',
       this.onAnimationEnd
     )

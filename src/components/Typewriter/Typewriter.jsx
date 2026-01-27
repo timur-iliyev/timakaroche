@@ -7,9 +7,10 @@ export default (props) => {
   const Tag = tag
 
   return (
-    <Tag className={clsx(className, 'typewriter')}>
+    <Tag className={clsx(className, 'typewriter')} aria-label={text}>
       <span
         className="typewriter__inner"
+        aria-hidden="true"
         data-js-typewriter={JSON.stringify(text)}
       ></span>
     </Tag>
