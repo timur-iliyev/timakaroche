@@ -8,12 +8,17 @@ export default (props) => {
     title,
     titleId = getIdFromString(props.title),
     description,
+    isFullHeight,
     children,
   } = props
 
   return (
     <section
-      className={clsx(className, 'section')}
+      className={clsx(
+        className,
+        'section',
+        isFullHeight && 'section--full-height'
+      )}
       aria-labelledby={titleId}
     >
       <div className="section__inner container">

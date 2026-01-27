@@ -10,4 +10,12 @@
   &__body {
     display: flex;
   }
+
+  &--full-height {
+    min-height: 100vh;
+
+    &__body {
+      height: 100%;
+    }
+  }
 }
