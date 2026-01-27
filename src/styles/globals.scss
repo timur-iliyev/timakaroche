@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top: 15vh;
+  scroll-padding-top: var(--header-height);
 
   &.is-lock {
     overflow: hidden;

@@ -8,8 +8,8 @@ export default (props) => {
   const { url } = props
   const menuItems = [
     {
-      label: 'Home',
-      href: '/',
+      label: 'About',
+      href: '#about-me',
     },
     {
       label: 'Projects',

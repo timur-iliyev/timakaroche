@@ -3,7 +3,8 @@
   z-index: 100;
   top: 0;
   width: 100%;
-  padding-block: fluid(48, 20);
+  height: fluid(160, 80);
+  @include flex-center;
   animation-name: scrolling-header;
   animation-fill-mode: both;
   animation-timeline: scroll();
@@ -11,7 +12,7 @@
 
   @keyframes scrolling-header {
     to {
-      padding-block: fluid(24, 10);
+      height: var(--header-height);
       background-color: var(--color-bg-light);
       border-color: var(--color-accent);
       box-shadow:

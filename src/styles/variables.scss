@@ -75,6 +75,7 @@
   --duration: 0.2s;
   --duration-long: 0.4s;
 
+  --header-height: #{fluid(120, 60)};
   --hero-logo-width: #{fluid(700, 300)};
 
   // ! class .l means Light Theme. Is used for development purpose, will be changed
