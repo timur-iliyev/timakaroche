@@ -8,7 +8,7 @@ export default (props) => {
     type = 'button',
     href,
     target,
-    mode = '', // '' (default) | 'transparent'
+    mode = '', // '' (default) | 'transparent' | 'accent'
     label,
     isLabelHidden = false,
     iconName,
