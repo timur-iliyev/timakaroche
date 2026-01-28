@@ -4,7 +4,9 @@
   top: 0;
   width: 100%;
   height: fluid(160, 80);
+
   @include flex-center;
+
   animation-name: scrolling-header;
   animation-fill-mode: both;
   animation-timeline: scroll();
