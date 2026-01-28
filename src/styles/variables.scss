@@ -66,10 +66,6 @@
     )};
   --container-width: #{fluid($desktop-width, $min-viewport-width)};
 
-  --section-margin-y: #{fluid(
-      $section-margin-y-desktop,
-      $section-margin-y-mobile
-    )};
   --section-gap: #{fluid($section-gap-desktop, $section-gap-mobile)};
 
   --duration: 0.2s;

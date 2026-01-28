@@ -30,7 +30,7 @@ export default (props) => {
             <p className="section__description">{description}</p>
           )}
         </header>
-        <div className="section__body">{children}</div>
+        <div className={clsx(className && `${className}__body`, 'section__body')}>{children}</div>
       </div>
     </section>
   )

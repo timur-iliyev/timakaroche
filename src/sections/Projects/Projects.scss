@@ -2,6 +2,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: var(--section-gap);
+    row-gap: fluid(32, 24);
   }
 }

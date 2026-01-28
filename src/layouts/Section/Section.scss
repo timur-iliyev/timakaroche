@@ -6,8 +6,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: var(--section-gap);
-    padding-bottom: var((--header-height));
+    gap: fluid(32, 24);
   }
 
   &--full-height {
