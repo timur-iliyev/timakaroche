@@ -42,10 +42,19 @@
 
   &--transparent {
     --buttonBgColor: transparent;
+    --buttonTextColor: var(--color-text);
+
+    box-shadow: none;
+
+    &:active {
+      scale: 0.95;
+    }
 
     @include hover {
       --buttonTextColor: var(--color-accent);
       --buttonBgColor: transparent;
+
+      box-shadow: inherit;
     }
   }
 
