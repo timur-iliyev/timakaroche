@@ -1,5 +1,6 @@
 import pxToRem from '@/utils/pxToRem'
 
 export default {
-  mobile: window.matchMedia(`(width <= ${pxToRem(768)}rem)`),
+  toTablet: window.matchMedia(`(width >= ${pxToRem(1024)}rem)`),
+  fromMobile: window.matchMedia(`(width <= ${pxToRem(768)}rem)`),
 }
