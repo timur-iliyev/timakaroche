@@ -1,11 +1,21 @@
-import clsx from 'clsx'
 import './Tabs.scss'
-import getTabsElementsIdsFromButtonLabel from './utils/getTabsElementsIdsFromButtonLabel'
+import clsx from 'clsx'
 import TabsNavigation from './components/TabsNavigation/TabsNavigation'
+import getTabsElementsIdsFromButtonLabel from './utils/getTabsElementsIdsFromButtonLabel'
 
 export default (props) => {
   const {
     className,
+    /**
+     * [
+     *   {
+     *     title: string,
+     *     buttonLabel: string,
+     *     isActive: boolean,
+     *     children: ...
+     *   },
+     * ]
+     */
     items = [],
     navigationTargetElementId = null,
     titleId,

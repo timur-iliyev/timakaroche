@@ -3,7 +3,20 @@ import clsx from 'clsx'
 import getTabsElementsIdsFromButtonLabel from '../../utils/getTabsElementsIdsFromButtonLabel'
 
 export default (props) => {
-  const { className, id, items = [], titleId } = props
+  const {
+    className,
+    id,
+    /**
+     * [
+     *   {
+     *     buttonLabel: string,
+     *     isActive: boolean,
+     *   },
+     * ]
+     */
+    items = [],
+    titleId,
+  } = props
 
   return (
     <div
