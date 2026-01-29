@@ -11,9 +11,6 @@
   --color-text: hsl(0deg 0% 95%);
   --color-text-secondary: hsl(0deg 0% 70%);
 
-  --color-border: hsl(0deg 0% 30%);
-  --color-border-top: hsl(0deg 0% 60%);
-
   --gradient-bg: linear-gradient(
     0deg,
     var(--color-bg) 95%,
@@ -38,8 +35,7 @@
     var(--color-bg-dark) 100%
   );
 
-  --border: 1px solid var(--color-border);
-  --border-top: 1px solid var(--color-border-top);
+  --border: 1px solid var(--color-text-secondary);
 
   --border-radius-s: 0.5rem;
   --border-radius-m: 1rem;
@@ -85,9 +81,6 @@
 
     --color-text: hsl(0deg 0% 5%);
     --color-text-secondary: hsl(0deg 0% 30%);
-
-    --color-border: var(--color-bg);
-    --color-border-top: hsl(0deg 0% 100%);
   }
 }
 
