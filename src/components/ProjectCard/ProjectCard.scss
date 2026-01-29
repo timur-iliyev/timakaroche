@@ -11,9 +11,28 @@
     &-button {
       overflow: hidden;
       padding: 0;
-      border: var(--border);
+      border: none;
       border-radius: var(--border-radius-s);
       box-shadow: var(--shadow-l);
+      position: relative;
+
+      &::before {
+        @include abs-cover;
+        @include flex-center;
+
+        content: 'View fullscreen ↗' / '';
+        font-size: fluid(24, 16);
+        color: var(--color-text);
+        background-color: color-mix(in oklch, var(--color-bg-light) 100%, transparent 10%);
+        clip-path: ellipse(100% 0% at 50% 0%);
+        transition: clip-path 0.75s cubic-bezier(0.65, 0.05, 0, 1);
+      }
+
+      @include hover {
+        &::before {
+          clip-path: ellipse(100% 100% at 50% 50%);
+        }
+      }
     }
 
     &-image {

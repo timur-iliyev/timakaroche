@@ -14,12 +14,13 @@ export default (props) => {
       >
         <button
           className="project-card__preview-button"
+          aria-label={`View ${name} fullscreen`}
           data-js-overlay-open-button=""
         >
           <img
             className="project-card__preview-image"
             src={images.preview}
-            alt={`${name} preview`}
+            alt=""
             loading="lazy"
           />
         </button>
