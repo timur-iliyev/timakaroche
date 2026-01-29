@@ -9,6 +9,18 @@
     gap: fluid(32, 24);
   }
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include from-tablet {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
   &--full-height {
     min-height: calc(100vh - var(--header-height));
 

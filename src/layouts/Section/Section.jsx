@@ -8,6 +8,7 @@ export default (props) => {
     title,
     titleId = getIdFromString(props.title),
     description,
+    actions,
     isFullHeight,
     children,
   } = props
@@ -23,14 +24,26 @@ export default (props) => {
     >
       <div className="section__inner container">
         <header className="section__header">
-          <h2 className="section__title" id={titleId}>
-            {title}
-          </h2>
-          {description && (
-            <p className="section__description">{description}</p>
+          <div className="section__info">
+            <h2 className="section__title" id={titleId}>
+              {title}
+            </h2>
+            {description && (
+              <p className="section__description">{description}</p>
+            )}
+          </div>
+          {actions && (
+            <div className="section__actions">{actions}</div>
           )}
         </header>
-        <div className={clsx(className && `${className}__body`, 'section__body')}>{children}</div>
+        <div
+          className={clsx(
+            className && `${className}__body`,
+            'section__body'
+          )}
+        >
+          {children}
+        </div>
       </div>
     </section>
   )
