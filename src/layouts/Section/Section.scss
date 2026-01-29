@@ -1,8 +1,4 @@
 .section {
-  display: flex;
-  flex-direction: column;
-  margin-block: var(--section-margin-y);
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -22,14 +18,8 @@
   }
 
   &--full-height {
-    min-height: calc(100vh - var(--header-height));
-
     .section__inner {
-      flex-grow: 1;
-    }
-
-    .section__body {
-      flex-grow: 1;
+      min-height: calc(100vh - var(--header-height));
     }
   }
 }
