@@ -3,7 +3,7 @@ import { Head } from 'minista'
 import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
-import { ReactComponent as LogoBigSvg } from '@/assets/logos/logo-big.svg'
+import Preloader from './layouts/Preloader'
 
 export default (props) => {
   const { children, title, url } = props
@@ -32,10 +32,7 @@ export default (props) => {
         />
         <link rel="manifest" href="/favicons/site.webmanifest" />
       </Head>
-      <div className="preloader" data-js-preloader="">
-        <div className="preloader__ellipse"></div>
-        <LogoBigSvg className="preloader__logo" />
-      </div>
+      <Preloader />
       <Header url={url} />
       <Content>{children}</Content>
       <Footer />
