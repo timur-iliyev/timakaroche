@@ -42,9 +42,12 @@
     width: 100%;
     margin-bottom: 10vh;
     padding-inline: 2rem;
+    font-size: 18px;
     text-align: center;
 
     &::after {
+      @include square-size(#{fluid(70, 40)});
+
       content: '';
       position: absolute;
       top: 80%;
@@ -54,11 +57,9 @@
       background-size: cover;
       background-repeat: no-repeat;
       translate: -50% 0;
-      animation: 700ms bouncing-arrow ease-in infinite alternate;
+      animation: 700ms hero-bouncing-arrow ease-in infinite alternate;
 
-      @include square-size(#{fluid(70, 40)});
-
-      @keyframes bouncing-arrow {
+      @keyframes hero-bouncing-arrow {
         to {
           transform: translateY(20%);
         }

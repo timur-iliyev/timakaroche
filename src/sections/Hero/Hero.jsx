@@ -13,7 +13,7 @@ export default () => {
         <Typewriter
           className="hero__subtitle"
           tag="p"
-          text="I can do some great things for you."
+          text="Passionate Frontend Developer"
         />
       </div>
     </section>
