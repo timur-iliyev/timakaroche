@@ -1,29 +1,129 @@
+@property --dividerProgress {
+  syntax: '<number>';
+  initial-value: 0;
+  inherits: false;
+}
+
 .about {
-  & .section__body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  --colorGlow: oklch(75% 0.25 290deg);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5vh;
   }
 
-  & .accordion__summary {
-    position: relative;
+  .section__body {
+    display: flex;
+    flex-direction: column;
+  }
 
+  &-split {
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    column-gap: 3rem;
+    width: 100%;
+  }
+
+  &__side {
+    display: flex;
+  }
+
+  &__divider {
+    position: relative;
+    height: calc(var(--dividerProgress) * 100%);
+    background-color: var(--color-accent);
+    box-shadow: 0 0 200px 10px var(--color-accent);
+    animation: growing-divider linear both;
+    animation-timeline: view(block);
+    animation-range: cover 15% cover 50%;
+
+    &::before,
     &::after {
       content: '';
       position: absolute;
-      top: 60%;
+      width: 10px;
+      height: 100%;
+      background-color: var(--colorGlow);
+      filter: blur(20px);
+      opacity: 0;
+      transition-duration: var(--duration);
+    }
 
-      @include square-size(fluid(64, 32));
+    &::before {
+      right: 0;
+      border-radius: 50% 0 0 50%;
+      box-shadow: -200px 0 500px 60px var(--colorGlow);
+    }
 
-      background-image: url('../../assets/images/about/click.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
+    &::after {
+      left: 0;
+      border-radius: 0 50% 50% 0;
+      box-shadow: 200px 0 500px 60px var(--colorGlow);
+    }
+
+    @keyframes growing-divider {
+      from {
+        --dividerProgress: 0;
+      }
+
+      to {
+        --dividerProgress: 1;
+      }
     }
   }
 
-  &__card {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.75rem;
+  &-split:has(.about__side--left:hover) .about__divider::before,
+  &-split:has(.about__side--right:hover) .about__divider::after {
+    opacity: 1;
+  }
+
+  &__footer {
+    @include flex-center;
+  }
+
+  &__button {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1;
+      height: 100%;
+      background-image: url('/src/assets/icons/arrow-down.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: 50%;
+      left: 0;
+      transform: translate(-100%, -50%) rotate(270deg);
+      animation: 700ms button-accent-bouncing-arrow-right ease-out
+        infinite alternate;
+
+      @keyframes button-accent-bouncing-arrow-right {
+        to {
+          transform: translate(-150%, -50%) rotate(270deg);
+        }
+      }
+    }
+
+    &::after {
+      top: 50%;
+      right: 0;
+      transform: translate(100%, -50%) rotate(90deg);
+      animation: 700ms button-accent-bouncing-arrow-left ease-out
+        infinite alternate;
+
+      @keyframes button-accent-bouncing-arrow-left {
+        to {
+          transform: translate(150%, -50%) rotate(90deg);
+        }
+      }
+    }
   }
 }
