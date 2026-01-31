@@ -1,4 +1,5 @@
 import getParams from '@/utils/getParams'
+import getSegmentedString from '@/utils/getSegmentedString'
 
 export default class TypewriterCollection {
   observerConfig = {
@@ -36,10 +37,11 @@ export default class TypewriterCollection {
   onTypewriterObserver = (entries) => {
     entries.forEach((entry) => {
       const { target, isIntersecting } = entry
-      const renderedText = getParams(target, this.selectors.root)
+      const rawText = getParams(target, this.selectors.root)
+      const segmentedText = getSegmentedString(rawText)
 
       if (isIntersecting) {
-        this.animateText(target, renderedText)
+        this.animateText(target, segmentedText)
         this.typewriterObserver.unobserve(target)
         this.observedCount--
       }
