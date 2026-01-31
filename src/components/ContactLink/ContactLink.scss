@@ -1,0 +1,11 @@
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include fluid-text(24, 16);
+
+  &__icon {
+    @include square-size(#{fluid(32, 24)});
+  }
+}
