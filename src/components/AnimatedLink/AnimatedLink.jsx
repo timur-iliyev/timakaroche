@@ -3,7 +3,8 @@ import clsx from 'clsx'
 import getSegmentedString from '@/utils/getSegmentedString'
 
 export default (props) => {
-  const { className, href, label } = props
+  const { className, href, label, target = '_self' } = props
+  const isExternal = href.startsWith('http')
 
   const labelSegmented = getSegmentedString(label)
 
@@ -11,6 +12,8 @@ export default (props) => {
     <a
       className={clsx(className, 'animated-link')}
       href={href}
+      target={isExternal ? '_blank' : target}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       aria-label={label}
     >
       {labelSegmented.map((char, index) => (
@@ -19,7 +22,7 @@ export default (props) => {
           aria-hidden="true"
           style={{ transitionDelay: `${index * 0.02}s` }}
         >
-          {char === ' ' ? '\u00A0' : char.toUpperCase()}
+          {char === ' ' ? '\u00A0' : char}
         </span>
       ))}
     </a>
