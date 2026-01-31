@@ -2,6 +2,7 @@ import './ProjectCard.scss'
 import Card from '../Card'
 import Button from '../Button'
 import TechnologyBadge from '../TechnologyBadge'
+import { Image } from 'minista'
 
 export default (props) => {
   const { name, description, url, images = [], stack = [] } = props
@@ -17,11 +18,10 @@ export default (props) => {
           aria-label={`View ${name} fullscreen`}
           data-js-overlay-open-button=""
         >
-          <img
+          <Image
             className="project-card__preview-image"
             src={images.preview}
             alt=""
-            loading="lazy"
           />
         </button>
         <dialog
@@ -45,11 +45,10 @@ export default (props) => {
                 <p className="project-card__dialog-item-title h2">
                   {fullSizeImage.title}
                 </p>
-                <img
+                <Image
                   className="project-card__dialog-item-image"
                   src={fullSizeImage.src}
                   alt={`${name} screenshot ${index}`}
-                  loading="lazy"
                 />
               </li>
             ))}
