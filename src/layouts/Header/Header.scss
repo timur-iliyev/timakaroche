@@ -84,6 +84,7 @@
 
     &-link {
       font-size: 24px;
+      text-transform: uppercase;
 
       &.is-active {
         color: var(--color-accent);
