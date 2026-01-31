@@ -17,7 +17,7 @@ const contactLinks = [
     label: 'Timur Iliyev',
     icon: {
       name: 'linkedin',
-      isColored: true,
+      hasFill: true,
     },
     href: 'https://www.linkedin.com/in/timur-iliyev/',
   },
@@ -25,7 +25,7 @@ const contactLinks = [
     label: 'timakaroche',
     icon: {
       name: 'npm',
-      isColored: true,
+      hasFill: true,
     },
     href: 'https://www.npmjs.com/~timakaroche',
   },
