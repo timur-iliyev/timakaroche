@@ -6,8 +6,9 @@
 
   &__body {
     @include flex-center;
-    @include square-size(fluid(60, 24));
+    @include square-size(fluid(64, 44));
 
+    overflow: hidden;
     padding: fluid(16, 4);
     background-image: var(--gradient-bg);
     border-radius: 50%;
