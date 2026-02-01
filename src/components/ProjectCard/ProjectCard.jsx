@@ -37,7 +37,7 @@ export default (props) => {
           tabIndex={-1}
           data-js-overlay-images-dialog=""
         >
-          <div className="project-card__dialog-header">
+          <header className="project-card__dialog-header">
             <Button
               className="project-card__dialog-close-button"
               label="Close"
@@ -45,7 +45,7 @@ export default (props) => {
                 'data-js-overlay-images-close-button': '',
               }}
             />
-          </div>
+          </header>
           <ul className="project-card__dialog-list">
             {images.fullSizeImages.map((fullSizeImage, index) => (
               <li className="project-card__dialog-item">
