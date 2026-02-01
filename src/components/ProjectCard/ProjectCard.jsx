@@ -3,9 +3,16 @@ import Card from '../Card'
 import Button from '../Button'
 import TechnologyBadge from '../TechnologyBadge'
 import { Image } from 'minista'
+import AnimatedLink from '../AnimatedLink'
 
 export default (props) => {
-  const { name, description, url, images = [], stack = [] } = props
+  const {
+    name,
+    description,
+    links, // {}
+    images = [],
+    stack = [],
+  } = props
 
   return (
     <Card className="project-card" layer={1} tag="article">
@@ -56,23 +63,44 @@ export default (props) => {
         </dialog>
       </div>
       <div className="project-card__content">
-        <div className="project-card__text-content">
-          <a href={url} className="project-card__link">
-            <h3 className="project-card__name">{name}</h3>
-          </a>
-          <p className="project-card__description">{description}</p>
+        <div className="project-card__content-body">
+          <div className="project-card__text-content">
+            <a href={links?.mainLink} className="project-card__link">
+              <h3 className="project-card__name">{name}</h3>
+            </a>
+            <p className="project-card__description">{description}</p>
+          </div>
+          <ul className="project-card__stack-list">
+            {stack.map((technology) => (
+              <li className="project-card__stack-item">
+                <TechnologyBadge
+                  className="project-card__stack-badge"
+                  technologyName={technology.name}
+                  logoName={technology.logo}
+                />
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="project-card__stack-list">
-          {stack.map((technology) => (
-            <li className="project-card__stack-item">
-              <TechnologyBadge
-                className="project-card__stack-badge"
-                technologyName={technology.name}
-                logoName={technology.logo}
-              />
-            </li>
-          ))}
-        </ul>
+        <div className="project-card__additional-links">
+          {links && (
+            <h4 className="project-card__additional-links-title">
+              Links:
+            </h4>
+          )}
+          <ul className="project-card__additional-links-list">
+            {links?.additionalLinks?.map((link) => (
+              <Card
+                className="project-card__additional-links-item"
+                tag="li"
+                layer={2}
+                isHoverable
+              >
+                <AnimatedLink label={link.label} href={link.url} />
+              </Card>
+            ))}
+          </ul>
+        </div>
       </div>
     </Card>
   )

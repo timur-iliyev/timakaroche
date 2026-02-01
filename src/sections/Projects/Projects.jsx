@@ -13,9 +13,9 @@ export default () => {
               <ProjectCard
                 name={project.name}
                 description={project.description}
-                url={project.url}
                 images={project.images}
                 stack={project.stack}
+                links={project.links}
               />
             </li>
           )
