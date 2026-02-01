@@ -34,24 +34,15 @@ export default () => {
         />
       }
     >
-      <div className="about-split hidden-tablet" data-js-split="">
-        <div
-          className="about__side about__side--left"
-          data-js-split-left=""
-        >
+      <div className="about-split hidden-tablet">
+        <div className="about__side about__side--left">
           <h3 className="about__side-title">{hardSkills.title}</h3>
           <SkillList skills={hardSkills.skills} />
         </div>
 
-        <div
-          className="about__divider"
-          data-js-split-divider=""
-        ></div>
+        <div className="about__divider"></div>
 
-        <div
-          className="about__side about__side--right"
-          data-js-split-right=""
-        >
+        <div className="about__side about__side--right">
           <h3 className="about__side-title">{softSkills.title}</h3>
           <SkillList skills={softSkills.skills} />
         </div>
