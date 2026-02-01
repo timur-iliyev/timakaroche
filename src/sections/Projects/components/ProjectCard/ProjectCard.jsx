@@ -1,9 +1,9 @@
 import './ProjectCard.scss'
-import Card from '../Card'
-import Button from '../Button'
-import TechnologyBadge from '../TechnologyBadge'
+import Card from '@/components/Card'
+import Button from '@/components/Button'
+import TechnologyBadge from '@/components/TechnologyBadge'
 import { Image } from 'minista'
-import AnimatedLink from '../AnimatedLink'
+import AnimatedLink from '@/components/AnimatedLink'
 
 export default (props) => {
   const {

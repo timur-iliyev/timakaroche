@@ -1,7 +1,7 @@
 import './Projects.scss'
 import Section from '@/layouts/Section'
 import projectsItems from './projectsItems'
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard from '@/sections/Projects/components/ProjectCard'
 
 export default () => {
   return (
