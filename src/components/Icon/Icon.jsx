@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { Icon as IconMinista } from 'minista'
 
 export default (props) => {
-  const { className, name, hasFill = true} = props
+  const { className, name, hasFill = true } = props
 
   return (
     <span className={clsx(className, 'icon')}>
