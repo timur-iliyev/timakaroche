@@ -28,6 +28,8 @@
 
   &__side {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__divider {
@@ -37,7 +39,7 @@
     box-shadow: 0 0 200px 10px var(--color-accent);
     animation: growing-divider linear both;
     animation-timeline: view(block);
-    animation-range: cover 15% cover 50%;
+    animation-range: cover 15% cover 60%;
 
     &::before,
     &::after {
@@ -77,6 +79,14 @@
   &-split:has(.about__side--left:hover) .about__divider::before,
   &-split:has(.about__side--right:hover) .about__divider::after {
     opacity: 1;
+  }
+
+  &-tabs {
+    .tabs__tab {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
 
   &__footer {

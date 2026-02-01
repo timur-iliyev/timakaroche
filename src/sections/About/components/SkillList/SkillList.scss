@@ -1,0 +1,22 @@
+.skill-list {
+  list-style: none;
+  counter-reset: custom-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  &__item {
+    display: flex;
+    column-gap: 0.75rem;
+    counter-increment: custom-counter;
+
+    &::before {
+      flex-shrink: 0;
+      content: '';
+      @include square-size(32px);
+      background-color: var(--color-bg-light);
+      box-shadow: var(--shadow-l);
+      border-radius: var(--border-radius-s);
+    }
+  }
+}
