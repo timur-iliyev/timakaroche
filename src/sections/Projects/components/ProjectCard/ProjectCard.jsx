@@ -56,7 +56,7 @@ export default (props) => {
                   className="project-card__dialog-item-image"
                   src={fullSizeImage.src}
                   alt={`${name} screenshot ${index}`}
-                  width='100%'
+                  width="100%"
                 />
               </li>
             ))}

@@ -1,9 +1,9 @@
 .skill-list {
-  list-style: none;
-  counter-reset: custom-counter;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+  list-style: none;
+  counter-reset: custom-counter;
 
   &__item {
     display: flex;
@@ -11,12 +11,13 @@
     counter-increment: custom-counter;
 
     &::before {
-      flex-shrink: 0;
       content: '';
-      @include square-size(32px);
+      flex-shrink: 0;
       background-color: var(--color-bg-light);
-      box-shadow: var(--shadow-l);
       border-radius: var(--border-radius-s);
+      box-shadow: var(--shadow-s);
+
+      @include square-size(32px);
     }
   }
 }
