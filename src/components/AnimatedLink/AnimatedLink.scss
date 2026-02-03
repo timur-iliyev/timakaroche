@@ -7,7 +7,7 @@
   color: var(--color-text);
   text-shadow: var(--color-accent) 0 3ex;
 
-  @include hover(false) {
+  @include hover-focus($activeOnMobile: false, $focusVisible: true) {
     .animated-link__char {
       --charPositionY: -3ex;
     }

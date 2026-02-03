@@ -16,7 +16,7 @@
     box-shadow: var(--shadow-s);
   }
 
-  @include hover {
+  @include hover-focus {
     --burgerButtonTextColor: var(--color-accent);
     --burgerButtonBgColor: var(--color-white);
   }

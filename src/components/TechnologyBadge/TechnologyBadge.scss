@@ -14,7 +14,7 @@
     border-radius: 50%;
     box-shadow: var(--shadow-l);
 
-    @include hover {
+    @include hover-focus {
       background-image: var(--gradient-bg-hover);
     }
   }

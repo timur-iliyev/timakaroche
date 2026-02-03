@@ -16,7 +16,7 @@
   }
 
   &--hoverable {
-    @include hover {
+    @include hover-focus {
       background-image: var(--gradient-bg-hover);
     }
   }

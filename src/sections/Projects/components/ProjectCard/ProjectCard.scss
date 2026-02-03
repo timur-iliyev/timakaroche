@@ -32,13 +32,7 @@
         transition: clip-path 0.5s cubic-bezier(0.65, 0.05, 0, 1);
       }
 
-      @include hover {
-        &::before {
-          clip-path: ellipse(100% 100% at 50% 50%);
-        }
-      }
-
-      &:focus-visible {
+      @include hover-focus($focusVisible: true) {
         &::before {
           clip-path: ellipse(100% 100% at 50% 50%);
         }
