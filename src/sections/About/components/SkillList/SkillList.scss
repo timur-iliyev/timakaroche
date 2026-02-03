@@ -3,12 +3,10 @@
   flex-direction: column;
   gap: 1.75rem;
   list-style: none;
-  counter-reset: custom-counter;
 
   &__item {
     display: flex;
     column-gap: 0.75rem;
-    counter-increment: custom-counter;
 
     &::before {
       content: '';

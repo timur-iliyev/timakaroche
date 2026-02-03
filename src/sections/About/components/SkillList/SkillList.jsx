@@ -4,7 +4,7 @@ export default (props) => {
   const { skills = [] } = props
 
   return (
-    <ol className="skill-list">
+    <ul className="skill-list">
       {skills.map((skill) => (
         <li className="skill-list__item">
           <div className="skill-list__skill">
@@ -15,6 +15,6 @@ export default (props) => {
           </div>
         </li>
       ))}
-    </ol>
+    </ul>
   )
 }
