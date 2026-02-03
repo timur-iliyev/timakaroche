@@ -10,7 +10,13 @@ export default (props) => {
 
   return (
     <>
-      <Head htmlAttributes={{ lang: 'en', class: 'is-lock' }}>
+      <Head
+        htmlAttributes={{
+          lang: 'en',
+          class: 'is-lock',
+          'data-theme': 'dark',
+        }}
+      >
         <title>TimaKaroche | {title}</title>
         <script src="/src/main.js" type="module" />
         <link

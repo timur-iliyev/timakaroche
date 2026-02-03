@@ -1,15 +1,5 @@
 :root {
-  --color-bg-dark: hsl(0deg 0% 0%);
-  --color-bg: hsl(0deg 0% 5%);
-  --color-bg-light: hsl(0deg 0% 10%);
-
   --color-white: hsl(0deg 0% 95%);
-
-  --color-accent: oklch(75% 0.25 290deg);
-  --color-accent-secondary: oklch(25% 0.25 290deg);
-
-  --color-text: hsl(0deg 0% 95%);
-  --color-text-secondary: hsl(0deg 0% 70%);
 
   --gradient-bg: linear-gradient(
     0deg,
@@ -70,8 +60,19 @@
   --header-height: #{fluid(120, 60)};
   --hero-logo-width: #{fluid(700, 300)};
 
-  // ! class .l means Light Theme. Is used for development purpose, will be changed
-  &.l {
+  &[data-theme='dark'] {
+    --color-bg-dark: hsl(0deg 0% 0%);
+    --color-bg: hsl(0deg 0% 10%);
+    --color-bg-light: hsl(0deg 0% 15%);
+
+    --color-accent: oklch(75% 0.25 290deg);
+    --color-accent-secondary: oklch(25% 0.25 290deg);
+
+    --color-text: hsl(0deg 0% 95%);
+    --color-text-secondary: hsl(0deg 0% 70%);
+  }
+
+  &[data-theme='light'] {
     --color-bg-dark: hsl(0deg 0% 90%);
     --color-bg: hsl(0deg 0% 95%);
     --color-bg-light: hsl(0deg 0% 100%);

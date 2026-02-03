@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import BurgerButton from '@/components/BurgerButton'
 import AnimatedLink from '@/components/AnimatedLink'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default (props) => {
   const { url } = props
@@ -45,6 +46,10 @@ export default (props) => {
               ))}
             </ul>
           </nav>
+          <ThemeToggle
+            className="header__theme-toggle"
+            label="toggle theme"
+          />
         </dialog>
         <BurgerButton
           className="header__burger-button visible-mobile"
