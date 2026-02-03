@@ -3,7 +3,13 @@ import clsx from 'clsx'
 import getSegmentedString from '@/utils/getSegmentedString'
 
 export default (props) => {
-  const { className, href, label, target = '_self' } = props
+  const {
+    className,
+    href,
+    label,
+    target = '_self',
+    extraAttributes = {},
+  } = props
   const isExternal = href.startsWith('http')
 
   const labelSegmented = getSegmentedString(label)
@@ -15,6 +21,7 @@ export default (props) => {
       target={isExternal ? '_blank' : target}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       aria-label={label}
+      {...extraAttributes}
     >
       {labelSegmented.map((char, index) => (
         <span

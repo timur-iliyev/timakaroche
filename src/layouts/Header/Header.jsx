@@ -41,6 +41,9 @@ export default (props) => {
                       'header__menu-link',
                       href === url && 'is-active'
                     )}
+                    extraAttributes={{
+                      'data-js-overlay-menu-link': '',
+                    }}
                   />
                 </li>
               ))}
