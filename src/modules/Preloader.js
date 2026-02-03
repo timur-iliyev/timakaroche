@@ -3,10 +3,6 @@ export default class Preloader {
     root: '[data-js-preloader]',
   }
 
-  stateClasses = {
-    isLock: 'is-lock',
-  }
-
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
 
@@ -15,9 +11,6 @@ export default class Preloader {
 
   onAnimationEnd = (event) => {
     if (event.animationName === 'preloader-fade-out') {
-      document.documentElement.classList.remove(
-        this.stateClasses.isLock
-      )
       document.dispatchEvent(
         new CustomEvent('preloaderClosed', {
           bubbles: true,

@@ -13,7 +13,6 @@ export default (props) => {
       <Head
         htmlAttributes={{
           lang: 'en',
-          class: 'is-lock',
           'data-theme': 'dark',
         }}
       >
