@@ -14,49 +14,49 @@
 }
 
 .hidden-laptop {
-  @include from-laptop {
+  @include laptop-below {
     display: none !important;
   }
 }
 
 .visible-laptop {
-  @include to-laptop {
+  @include laptop-above {
     display: none !important;
   }
 }
 
 .hidden-tablet {
-  @include from-tablet {
+  @include tablet-below {
     display: none !important;
   }
 }
 
 .visible-tablet {
-  @include to-tablet {
+  @include tablet-above {
     display: none !important;
   }
 }
 
 .hidden-mobile {
-  @include from-mobile {
+  @include mobile-below {
     display: none !important;
   }
 }
 
 .visible-mobile {
-  @include to-mobile {
+  @include mobile-above {
     display: none !important;
   }
 }
 
 .hidden-mobile-s {
-  @include from-mobile-s {
+  @include mobile-s-below {
     display: none !important;
   }
 }
 
 .visible-mobile-s {
-  @include to-mobile-s {
+  @include mobile-s-above {
     display: none !important;
   }
 }

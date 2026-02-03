@@ -52,7 +52,7 @@ export default class OverlayMenu {
     )
   }
 
-  onToMobileChange = (event) => {
+  onMobileAboveChange = (event) => {
     if (event.matches) {
       this.closeDialog()
     }
@@ -66,9 +66,9 @@ export default class OverlayMenu {
     this.linkElements.forEach((linkElement) => {
       linkElement.addEventListener('click', this.onLinkElementClick)
     })
-    MatchMedia.toMobile.addEventListener(
+    MatchMedia.mobileAbove.addEventListener(
       'change',
-      this.onToMobileChange
+      this.onMobileAboveChange
     )
   }
 }

@@ -5,49 +5,49 @@ $tablet: $tablet-width * 1px;
 $mobile: $mobile-width * 1px;
 $mobile-s: $mobile-s-width * 1px;
 
-@mixin to-laptop {
+@mixin laptop-above {
   @media (width > $laptop) {
     @content;
   }
 }
 
-@mixin from-laptop {
+@mixin laptop-below {
   @media (width <= $laptop) {
     @content;
   }
 }
 
-@mixin to-tablet {
+@mixin tablet-above {
   @media (width > $tablet) {
     @content;
   }
 }
 
-@mixin from-tablet {
+@mixin tablet-below {
   @media (width <= $tablet) {
     @content;
   }
 }
 
-@mixin to-mobile {
+@mixin mobile-above {
   @media (width > $mobile) {
     @content;
   }
 }
 
-@mixin from-mobile {
+@mixin mobile-below {
   @media (width <= $mobile) {
     @content;
   }
 }
 
-@mixin to-mobile-s {
+@mixin mobile-s-above {
   @media (width > $mobile-s) {
     @content;
   }
 }
 
-@mixin from-mobile-s {
+@mixin mobile-s-below {
   @media (width <= $mobile-s) {
     @content;
   }

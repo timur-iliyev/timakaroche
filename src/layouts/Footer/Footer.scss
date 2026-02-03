@@ -12,7 +12,7 @@
     gap: fluid(32, 24);
     width: 100%;
 
-    @include from-tablet {
+    @include tablet-below {
       grid-template-columns: 1fr;
     }
 
@@ -30,7 +30,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 0.75rem;
 
-      @include from-mobile {
+      @include mobile-below {
         grid-template-columns: 1fr;
       }
     }

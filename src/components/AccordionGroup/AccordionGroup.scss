@@ -30,7 +30,7 @@
     column-count: 2;
     column-gap: 16px;
 
-    @include from-tablet {
+    @include tablet-below {
       column-count: 1;
     }
   }
