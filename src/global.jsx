@@ -6,7 +6,7 @@ import Footer from '@/layouts/Footer'
 import Preloader from './layouts/Preloader'
 
 export default (props) => {
-  const { children, title, url } = props
+  const { children, url } = props
 
   return (
     <>
@@ -16,7 +16,7 @@ export default (props) => {
           'data-theme': 'dark',
         }}
       >
-        <title>TimaKaroche | {title}</title>
+        <title>TimaKaroche</title>
         <script src="/src/main.js" type="module" />
         <link
           rel="apple-touch-icon"
