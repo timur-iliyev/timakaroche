@@ -41,7 +41,7 @@
     height: 100%;
     background:
       var(--bg-overlay),
-      url('../../assets/bg.svg') 50% / cover,
+      url('../../assets/bg.svg') center / cover,
       var(--color-bg-dark);
     background-repeat: no-repeat;
     border: none;
