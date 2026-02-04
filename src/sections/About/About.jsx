@@ -24,7 +24,7 @@ export default () => {
       className="about"
       title={title}
       titleId={titleId}
-      description="My config:"
+      description="My name is Timur Iliyev and here's my approach to development"
       actions={
         <TabsNavigation
           className="about-tabs__navigation visible-tablet"
@@ -58,6 +58,7 @@ export default () => {
         <Button
           className="about__button"
           label="Download CV"
+          href="https://www.linkedin.com/in/timur-iliyev/"
           mode="accent"
         />
       </footer>
