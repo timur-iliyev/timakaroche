@@ -5,7 +5,11 @@ import ProjectCard from '@/sections/Projects/components/ProjectCard'
 
 export default () => {
   return (
-    <Section className="projects" title="Projects">
+    <Section
+      className="projects"
+      title="Projects"
+      description="Here's what I've built"
+    >
       <ul className="projects__list">
         {projectsItems.map((project) => {
           return (
