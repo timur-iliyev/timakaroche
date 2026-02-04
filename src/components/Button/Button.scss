@@ -27,7 +27,7 @@
     box-shadow: var(--shadow-s);
   }
 
-  @include hover-focus($focusVisible: true) {
+  @include hover-focus {
     --buttonTextColor: var(--color-accent);
     --buttonBgColor: var(--color-white);
   }
@@ -50,7 +50,7 @@
       scale: 0.95;
     }
 
-    @include hover-focus($focusVisible: true) {
+    @include hover-focus {
       --buttonTextColor: var(--color-accent);
       --buttonBgColor: transparent;
 
@@ -84,7 +84,7 @@
       }
     }
 
-    @include hover-focus($focusVisible: true) {
+    @include hover-focus {
       background:
         linear-gradient(var(--color-white), var(--color-white))
           padding-box,
