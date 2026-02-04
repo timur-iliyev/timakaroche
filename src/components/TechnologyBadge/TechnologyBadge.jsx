@@ -1,6 +1,5 @@
 import './TechnologyBadge.scss'
 import clsx from 'clsx'
-import { Image } from 'minista'
 
 export default (props) => {
   const { className, technologyName, logoName } = props
@@ -8,12 +7,10 @@ export default (props) => {
   return (
     <figure className={clsx(className, 'technology-badge')}>
       <div className="technology-badge__body">
-        <Image
-          src={
-            `/src/assets/images/technologyLogos/${logoName}` + '.svg'
-          }
-          alt={technologyName}
+        <img
           className="technology-badge__logo"
+          src={`/technologyLogos/${logoName}` + '.svg'}
+          alt={technologyName}
           title={technologyName}
         />
       </div>
