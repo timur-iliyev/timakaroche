@@ -7,21 +7,17 @@ export default [
       mainLink: '/',
       additionalLinks: [
         {
-          label: '/',
-          url: '/',
-        },
-        {
           label: 'GitHub',
           url: 'https://github.com/timur-iliyev/timakaroche',
         },
       ],
     },
     images: {
-      preview: '/src/assets/images/projects/timakaroche.jpeg',
+      preview: '/src/assets/images/projects/timakaroche.png',
       fullSizeImages: [
         {
           title: 'This website',
-          src: '/src/assets/images/projects/timakaroche.jpeg',
+          src: '/src/assets/images/projects/timakaroche.png',
         },
       ],
     },
@@ -81,11 +77,11 @@ export default [
     description:
       'Bachelor thesis project providing comprehensive exploration of responsive web design methodologies and implementation techniques. Theoretical foundation covers six technical approaches, in-depth analysis of HTML5 responsive features, advanced CSS techniques, JavaScript contributions, and rigorous testing methodologies. Includes comparative evaluation of leading CSS frameworks using multi-criteria analysis. Practical implementation features a fully responsive home page of community platform built with Mobile-First approach. Extensively tested across multiple devices, browsers, and operating systems to verify functionality responsiveness and cross-platform compatibility.',
     links: {
-      mainLink: '/',
+      mainLink: 'https://bachelor-thesis-steel.vercel.app/',
       additionalLinks: [
         {
-          label: '/',
-          url: '/',
+          label: 'Demo',
+          url: 'https://bachelor-thesis-steel.vercel.app/',
         },
         {
           label: 'GitHub',
@@ -220,11 +216,11 @@ export default [
     description:
       'Interactive ToDo application featuring a dual-sided card interface with 3D flip animation. Active tasks display on the front; archived tasks appear on the reverse for recovery or permanent deletion. Built with class-based JavaScript architecture: main.js orchestrates logic flow, Controller.js manages business and data operations, Side.js handles UI rendering and DOM interactions. All data persists in localStorage. Includes jsonPlaceholder API integration for sample task data. Includes date-based filtering (newest-to-oldest and reversed) and task search functionality.',
     links: {
-      mainLink: '/',
+      mainLink: 'https://todo-app-dun-seven-46.vercel.app/',
       additionalLinks: [
         {
-          label: '/',
-          url: '/',
+          label: 'ToDo App',
+          url: 'https://todo-app-dun-seven-46.vercel.app/',
         },
         {
           label: 'GitHub',
@@ -293,12 +289,8 @@ export default [
     description:
       'Home page of a recipe sharing platform developed as a practice project to master Minista framework, Swiper API, JSX, and Sass. Features a custom slider component built with Swiper API for smooth recipe carousel navigation. Fully functional and ready for further development — includes well-structured codebase and component-based architecture.',
     links: {
-      mainLink: '/',
+      mainLink: 'https://github.com/timur-iliyev/foodieland',
       additionalLinks: [
-        {
-          label: '/',
-          url: '/',
-        },
         {
           label: 'GitHub',
           url: 'https://github.com/timur-iliyev/foodieland',
@@ -377,10 +369,6 @@ export default [
       mainLink: '/',
       additionalLinks: [
         {
-          label: '/',
-          url: '/',
-        },
-        {
           label: 'GitHub',
           url: 'https://github.com/timur-iliyev/weather-app',
         },
@@ -444,11 +432,11 @@ export default [
     description:
       'Collaborative university project developing an online gaming news platform. Practiced design and development workflow: designing layouts in Figma, then implementing home page with Mobile-First approach and BEM methodology.',
     links: {
-      mainLink: '/',
+      mainLink: 'https://game-not.vercel.app/',
       additionalLinks: [
         {
-          label: '/',
-          url: '/',
+          label: 'Demo',
+          url: 'https://game-not.vercel.app/',
         },
         {
           label: 'GitHub',
