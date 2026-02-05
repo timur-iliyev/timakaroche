@@ -98,12 +98,8 @@ export default [
         '/src/assets/images/projects/porsche-club-desktop.jpeg',
       fullSizeImages: [
         {
-          title: 'Content 1',
-          src: '/src/assets/images/projects/bachelor-thesis-content-1.png',
-        },
-        {
-          title: 'Content 2',
-          src: '/src/assets/images/projects/bachelor-thesis-content-2.png',
+          title: 'Content',
+          src: '/src/assets/images/projects/bachelor-thesis-content.jpg',
         },
         {
           title: 'On desktop',
