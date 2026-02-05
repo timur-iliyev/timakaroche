@@ -366,7 +366,7 @@ export default [
     description:
       'Final project for Codedex "The Origins III: JavaScript" course. Weather forecasting application providing real-time weather updates and forecasts for any location worldwide. Built to practice asynchronous JavaScript and API integration. Utilizes OpenWeather API for accurate weather data retrieval. Demonstrates async/await patterns, promise handling, and error management.',
     links: {
-      mainLink: '/',
+      mainLink: 'https://github.com/timur-iliyev/weather-app',
       additionalLinks: [
         {
           label: 'GitHub',
