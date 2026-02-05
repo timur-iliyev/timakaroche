@@ -26,7 +26,7 @@ export default defineConfig({
         aspect: undefined,
         background: undefined,
         fit: 'cover',
-        position: 'centre',
+        position: 'center',
       },
     },
     svgr: {
