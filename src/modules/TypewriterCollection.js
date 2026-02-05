@@ -3,7 +3,7 @@ import getSegmentedString from '@/utils/getSegmentedString'
 
 export default class TypewriterCollection {
   observerConfig = {
-    rootMargin: '0% 0% -10% 0%',
+    rootMargin: '0% 0% -5% 0%',
   }
 
   selectors = {
