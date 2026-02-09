@@ -60,49 +60,49 @@ export default [
     buttonLabel: 'Soft Skills',
     skills: [
       {
-        title: 'Problem-Solving',
+        title: 'Responsibility & Reliability',
         description:
-          'I break down complex tasks into smaller parts and find solutions step by step.',
+          'I take a responsible approach to my work. I organize tasks well, meet deadlines, and deliver quality results consistently.',
       },
       {
-        title: 'Quality Focus',
+        title: 'Teamwork & Communication',
         description:
-          'I care about doing my work well. I check my code, follow code-style, and make sure everything is done properly.',
+          'I work well in teams. I communicate clearly with designers, managers, and developers. I ask for help when needed and actively share knowledge.',
       },
       {
-        title: 'Reliability & Time Management',
+        title: 'Logical Thinking & Problem-Solving',
         description:
-          "I'm responsible about deadlines. I plan my work well and deliver on time. I have good time management skills.",
+          'I approach challenges with structured, analytical thinking. I break complex problems into manageable parts and find logical solutions.',
       },
       {
-        title: 'Attention to Detail',
+        title: 'Adaptability & Resilience',
         description:
-          'I pay careful attention to project requirements and terms of reference.',
+          "I adjust quickly when requirements change or priorities shift. Difficulties don't scare me — I stay flexible and ready for new challenges.",
       },
       {
-        title: 'Communication',
+        title: 'Continuous Learning & Growth',
         description:
-          'I communicate clearly with designers, managers, and other developers. I express my thoughts well and ask questions when needed.',
+          "I'm motivated to improve constantly. I study new technologies, ask questions when I don't understand, and share what I've learned with others.",
       },
       {
-        title: 'Teamwork',
+        title: 'Time Management & Organization',
         description:
-          'I work well in teams. I share progress, ask for help when needed, and listen to my teammates.',
+          'I plan my work effectively and manage my time well.',
       },
       {
-        title: 'Continuous Learning',
+        title: 'Critical Analysis & Attention to Detail',
         description:
-          "I'm motivated to improve myself. I constantly study new technologies in my field and try to expand my skills.",
+          'I think critically about requirements and code. I pay careful attention to details because small things often have a big impact.',
       },
       {
-        title: 'Adaptability',
+        title: 'Code Quality & Craftsmanship',
         description:
-          "I adjust quickly when requirements change or priorities shift. I'm flexible and ready for new challenges.",
+          'I care deeply about writing clean, maintainable code. I follow standards, best practices, ensure readability, and maintain high code quality in everything I build.',
       },
       {
-        title: 'Documentation & Reporting',
+        title: 'Focus & Concentration',
         description:
-          'I write detailed reports and documentation of my work so others can easily understand what I did and why.',
+          'I can focus deeply on complex tasks and maintain concentration. I minimize distractions when work requires it.',
       },
     ],
   },
