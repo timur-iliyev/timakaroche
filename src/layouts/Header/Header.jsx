@@ -51,7 +51,6 @@ export default (props) => {
           </nav>
           <ThemeToggle
             className="header__theme-toggle"
-            label="toggle theme"
           />
         </dialog>
         <BurgerButton

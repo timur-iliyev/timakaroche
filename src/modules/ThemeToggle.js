@@ -4,6 +4,7 @@ export default class ThemeToggle {
   selectors = {
     root: '[data-js-theme-toggle]',
     checkbox: '[data-js-theme-toggle-checkbox]',
+    slider: '[data-js-theme-toggle-slider]',
   }
 
   storageKey = 'theme'
@@ -32,6 +33,7 @@ export default class ThemeToggle {
     this.checkboxElement = this.rootElement.querySelector(
       this.selectors.checkbox
     )
+    this.sliderElement = this.rootElement.querySelector(this.selectors.slider)
 
     this.setTheme(this.initialTheme)
     this.bindEvents()
@@ -42,6 +44,12 @@ export default class ThemeToggle {
 
     this.checkboxElement.checked = theme === this.themes.light
 
+    this.sliderElement.ariaChecked = this.checkboxElement.checked
+
+this.sliderElement.setAttribute(
+  'aria-label',
+  `Toggle theme (${theme} mode active)`
+)
     localStorage.setItem(this.storageKey, theme)
   }
 

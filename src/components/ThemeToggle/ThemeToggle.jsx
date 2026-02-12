@@ -5,8 +5,8 @@ import clsx from 'clsx'
 export default (props) => {
   const {
     className,
-    id = getIdFromString(props.label),
-    label,
+    id = getIdFromString(props.label || 'toggle-theme'),
+    label = 'Toggle theme',
   } = props
 
   return (
@@ -15,19 +15,20 @@ export default (props) => {
       htmlFor={id}
       data-js-theme-toggle=""
     >
-      {label && (
-        <span className="theme-toggle__label visually-hidden">
-          {label}
-        </span>
-      )}
       <input
         className="theme-toggle__checkbox hidden"
         id={id}
         type="checkbox"
-        readOnly
         data-js-theme-toggle-checkbox=""
       />
-      <span className="theme-toggle__slider" tabIndex="0"></span>
+      <span
+        className="theme-toggle__slider"
+        tabIndex="0"
+        role="switch"
+        aria-label={label}
+        aria-checked="false"
+        data-js-theme-toggle-slider=""
+      ></span>
     </label>
   )
 }
