@@ -49,9 +49,7 @@ export default (props) => {
               ))}
             </ul>
           </nav>
-          <ThemeToggle
-            className="header__theme-toggle"
-          />
+          <ThemeToggle className="header__theme-toggle" />
         </dialog>
         <BurgerButton
           className="header__burger-button visible-mobile"

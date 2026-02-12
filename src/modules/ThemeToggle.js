@@ -33,7 +33,9 @@ export default class ThemeToggle {
     this.checkboxElement = this.rootElement.querySelector(
       this.selectors.checkbox
     )
-    this.sliderElement = this.rootElement.querySelector(this.selectors.slider)
+    this.sliderElement = this.rootElement.querySelector(
+      this.selectors.slider
+    )
 
     this.setTheme(this.initialTheme)
     this.bindEvents()
@@ -46,10 +48,10 @@ export default class ThemeToggle {
 
     this.sliderElement.ariaChecked = this.checkboxElement.checked
 
-this.sliderElement.setAttribute(
-  'aria-label',
-  `Toggle theme (${theme} mode active)`
-)
+    this.sliderElement.setAttribute(
+      'aria-label',
+      `Toggle theme (${theme} mode active)`
+    )
     localStorage.setItem(this.storageKey, theme)
   }
 
