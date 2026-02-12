@@ -57,9 +57,10 @@ export default () => {
       <footer className="about__footer">
         <Button
           className="about__button"
-          label="Download CV"
-          href="https://www.linkedin.com/in/timur-iliyev/"
+          label="View CV"
+          href="/Frontend_Timur_Iliyev_CV.pdf"
           mode="accent"
+          extraAttributes={{ target: '_blank' }}
         />
       </footer>
     </Section>
