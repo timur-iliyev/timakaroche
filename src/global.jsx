@@ -17,6 +17,58 @@ export default (props) => {
         }}
       >
         <title>TimaKaroche</title>
+
+        <meta
+          name="description"
+          content="Frontend portfolio of Timur Iliyev."
+        />
+        <meta
+          property="description"
+          content="Frontend portfolio of Timur Iliyev."
+        />
+        <link
+          rel="canonical"
+          href="https://timakaroche.vercel.app/"
+        />
+        <meta name="robots" content="index,follow" />
+
+        <meta
+          property="og:url"
+          content="https://timakaroche.vercel.app/"
+        />
+        <meta property="og:site_name" content="TimaKaroche" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="TimaKaroche — Timur Iliyev"
+        />
+        <meta
+          property="og:description"
+          content="Frontend portfolio of Timur Iliyev."
+        />
+        <meta
+          property="og:image"
+          content="/og_timakaroche.png"
+        />
+        <meta property="og:image:alt" content="TimaKaroche logo" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="TimaKaroche — Timur Iliyev"
+        />
+        <meta
+          name="twitter:description"
+          content="Frontend portfolio of Timur Iliyev."
+        />
+        <meta
+          name="twitter:image"
+          content="/og_timakaroche.png"
+        />
+
         <script src="/src/main.js" type="module" />
         <link
           rel="apple-touch-icon"
