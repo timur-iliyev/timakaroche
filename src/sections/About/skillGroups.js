@@ -5,7 +5,7 @@ export default [
     isActive: true,
     skills: [
       {
-        title: 'HTML / JSX',
+        title: 'HTML / JSX / TSX',
         description:
           'I create semantic, accessible markup with focus on progressive enhancement and HTML5 standards.',
       },
