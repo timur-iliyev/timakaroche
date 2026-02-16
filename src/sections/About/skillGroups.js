@@ -15,7 +15,7 @@ export default [
           'I build responsive, scalable interfaces using modern CSS techniques. BEM methodology, UX best practices, animations.',
       },
       {
-        title: 'JavaScript (ES6+, OOP) / C#',
+        title: 'JavaScript (ES6+) / TypeScript / C#',
         description:
           'I write clean, performance-focused code — building scalable, maintainable architectures.',
       },
