@@ -10,7 +10,7 @@ export default [
           'I create semantic, accessible markup with focus on progressive enhancement and HTML5 standards.',
       },
       {
-        title: 'CSS / Sass (SCSS) / PostCSS / Bootstrap',
+        title: 'CSS / Sass (SCSS) / CSS Modules / PostCSS / Bootstrap',
         description:
           'I build responsive, scalable interfaces using modern CSS techniques. BEM methodology, UX best practices, animations.',
       },
