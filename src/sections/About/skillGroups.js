@@ -10,23 +10,30 @@ export default [
           'I create semantic, accessible markup with focus on progressive enhancement and HTML5 standards.',
       },
       {
-        title: 'CSS / Sass (SCSS) / CSS Modules / PostCSS / Bootstrap',
+        title:
+          'CSS / Sass (SCSS) / CSS Modules / PostCSS / Bootstrap',
         description:
-          'I build responsive, scalable interfaces using modern CSS techniques. BEM methodology, UX best practices, animations.',
+          'I build responsive, scalable, and user-friendly interfaces using modern CSS techniques. BEM methodology, UX/UI best practices, animations, and attention to detail.',
       },
       {
         title: 'JavaScript (ES6+) / TypeScript / C#',
         description:
-          'I write clean, performance-focused code — building scalable, maintainable architectures.',
+          'I write performance-focused code with scalability in mind — designing and building efficient, maintainable architectures.',
       },
       {
         title: 'React',
-        description: "I'm actively expanding my React knowledge.",
+        description:
+          'I work confidently with React: component architecture, FSD (Feature-Sliced Design), Hooks, and state management. I understand lifecycle, side effects, and build scalable, maintainable applications.',
       },
       {
         title: 'Minista SSG / Vite',
         description:
           'I leverage modern build tools for rapid development and optimized production builds.',
+      },
+      {
+        title: 'Web Performance & Optimization',
+        description:
+          'I prioritize high performance: optimize images, minimize bundle size.',
       },
       {
         title: 'Accessibility (ARIA, WCAG)',
@@ -65,14 +72,19 @@ export default [
           'I take a responsible approach to my work. I organize tasks well, meet deadlines, and deliver quality results consistently.',
       },
       {
+        title: 'Logical Thinking & Problem-Solving',
+        description:
+          'I approach challenges with structured, analytical thinking. I break complex problems into manageable parts and find logical solutions.',
+      },
+      {
         title: 'Teamwork & Communication',
         description:
           'I work well in teams. I communicate clearly with designers, managers, and developers. I ask for help when needed and actively share knowledge.',
       },
       {
-        title: 'Logical Thinking & Problem-Solving',
+        title: 'Initiative & Proactivity',
         description:
-          'I approach challenges with structured, analytical thinking. I break complex problems into manageable parts and find logical solutions.',
+          'I actively propose ideas and improvements. I take responsibility, find issues to fix, and always look for better ways to do things.',
       },
       {
         title: 'Adaptability & Resilience',
@@ -92,7 +104,7 @@ export default [
       {
         title: 'Critical Analysis & Attention to Detail',
         description:
-          'I think critically about requirements and code. I pay careful attention to details because small things often have a big impact.',
+          'I analyze requirements and code critically. I have a keen eye for detail and understand that precision directly impacts product quality and user experience.',
       },
       {
         title: 'Code Quality & Craftsmanship',
