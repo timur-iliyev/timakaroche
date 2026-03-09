@@ -57,8 +57,15 @@ export default () => {
       <footer className="about__footer">
         <Button
           className="about__button"
-          label="View CV"
+          label="View CV (English)"
           href="/Frontend_Timur_Iliyev_CV.pdf"
+          mode="accent"
+          extraAttributes={{ target: '_blank' }}
+        />
+        <Button
+          className="about__button"
+          label="View CV (Czech)"
+          href="/Frontend_Timur_Iliyev_CV_CZ.pdf"
           mode="accent"
           extraAttributes={{ target: '_blank' }}
         />

@@ -91,49 +91,51 @@
 
   &__footer {
     @include flex-center;
+    flex-direction: column;
+    row-gap: 1rem;
   }
 
-  &__button {
-    position: relative;
+  // &__button {
+  //   position: relative;
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      aspect-ratio: 1;
-      height: 100%;
-      background-image: url('/src/assets/icons/arrow-down.svg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+  //   &::before,
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     aspect-ratio: 1;
+  //     height: 100%;
+  //     background-image: url('/src/assets/icons/arrow-down.svg');
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //   }
 
-    &::before {
-      top: 50%;
-      left: 0;
-      transform: translate(-100%, -50%) rotate(270deg);
-      animation: 700ms button-accent-bouncing-arrow-right ease-out
-        infinite alternate;
+  //   &::before {
+  //     top: 50%;
+  //     left: 0;
+  //     transform: translate(-100%, -50%) rotate(270deg);
+  //     animation: 700ms button-accent-bouncing-arrow-right ease-out
+  //       infinite alternate;
 
-      @keyframes button-accent-bouncing-arrow-right {
-        to {
-          transform: translate(-150%, -50%) rotate(270deg);
-        }
-      }
-    }
+  //     @keyframes button-accent-bouncing-arrow-right {
+  //       to {
+  //         transform: translate(-150%, -50%) rotate(270deg);
+  //       }
+  //     }
+  //   }
 
-    &::after {
-      top: 50%;
-      right: 0;
-      transform: translate(100%, -50%) rotate(90deg);
-      animation: 700ms button-accent-bouncing-arrow-left ease-out
-        infinite alternate;
+  //   &::after {
+  //     top: 50%;
+  //     right: 0;
+  //     transform: translate(100%, -50%) rotate(90deg);
+  //     animation: 700ms button-accent-bouncing-arrow-left ease-out
+  //       infinite alternate;
 
-      @keyframes button-accent-bouncing-arrow-left {
-        to {
-          transform: translate(150%, -50%) rotate(90deg);
-        }
-      }
-    }
-  }
+  //     @keyframes button-accent-bouncing-arrow-left {
+  //       to {
+  //         transform: translate(150%, -50%) rotate(90deg);
+  //       }
+  //     }
+  //   }
+  // }
 }
