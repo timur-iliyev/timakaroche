@@ -208,6 +208,88 @@ export default [
     ],
   },
   {
+    name: 'Contact Footer',
+    description:
+      'A contact form application built from scratch with production-ready standards. Emphasizes clean architecture, two-layer validation, and security best practices using React + Vite on the frontend and Express on the backend. The project demonstrates a modern approach to form handling with data privacy, comprehensive error management, and deployment readiness for Vercel + Render without compromising code quality or user experience.',
+    links: {
+      mainLink: 'https://contact-footer.vercel.app/',
+      additionalLinks: [
+        {
+          label: 'Demo',
+          url: 'https://contact-footer.vercel.app/',
+        },
+        {
+          label: 'GitHub',
+          url: 'https://github.com/timur-iliyev/contact-footer',
+        },
+      ],
+    },
+    images: {
+      preview:
+        '/src/assets/images/projects/contact-footer-desktop.jpeg',
+      fullSizeImages: [
+        {
+          title: 'On desktop:',
+          src: '/src/assets/images/projects/contact-footer-desktop.jpeg',
+        },
+        {
+          title: 'On mobile:',
+          src: '/src/assets/images/projects/contact-footer-mobile.png',
+        },
+      ],
+    },
+    stack: [
+      {
+        name: 'React',
+        logo: 'react',
+      },
+      {
+        name: 'Vite',
+        logo: 'vite',
+      },
+      {
+        name: 'JavaScript',
+        logo: 'js',
+      },
+      {
+        name: 'Node.js',
+        logo: 'nodejs',
+      },
+      {
+        name: 'Express.js',
+        logo: 'expressjs',
+      },
+      {
+        name: 'Sass',
+        logo: 'sass',
+      },
+      {
+        name: 'Git',
+        logo: 'git',
+      },
+      {
+        name: 'ESLint',
+        logo: 'eslint',
+      },
+      {
+        name: 'StyleLint',
+        logo: 'stylelint',
+      },
+      {
+        name: 'Prettier',
+        logo: 'prettier',
+      },
+      {
+        name: 'NPM',
+        logo: 'npm',
+      },
+      {
+        name: 'BEM',
+        logo: 'bem',
+      },
+    ],
+  },
+  {
     name: 'ToDo App',
     description:
       'Interactive ToDo application featuring a dual-sided card interface with 3D flip animation. Active tasks display on the front; archived tasks appear on the reverse for recovery or permanent deletion. Built with class-based JavaScript architecture: main.js orchestrates logic flow, Controller.js manages business and data operations, Side.js handles UI rendering and DOM interactions. All data persists in localStorage. Includes jsonPlaceholder API integration for sample task data. Includes date-based filtering (newest-to-oldest and reversed) and task search functionality.',
