@@ -5,13 +5,13 @@ export default [
     isActive: true,
     skills: [
       {
-        title: 'HTML / JSX / TSX',
+        title: 'HTML5 / JSX / TSX',
         description:
           'I create semantic, accessible markup with focus on progressive enhancement and HTML5 standards.',
       },
       {
         title:
-          'CSS / Sass (SCSS) / CSS Modules / PostCSS / Bootstrap',
+          'CSS3 / Sass (SCSS) / CSS Modules / PostCSS / Bootstrap',
         description:
           'I build responsive, scalable, and user-friendly interfaces using modern CSS techniques. BEM methodology, UX/UI best practices, animations, and attention to detail.',
       },
@@ -43,7 +43,7 @@ export default [
       {
         title: 'REST API / WebSockets',
         description:
-          'I understand how APIs work and can integrate them into projects. I have basic knowledge of real-time communication and how WebSockets work.',
+          'I have practical experience integrating REST APIs in real projects. I understand HTTP methods, status codes, error handling, and async patterns. I also have basic knowledge of real-time communication with WebSockets.',
       },
       {
         title: 'Git / GitHub',
