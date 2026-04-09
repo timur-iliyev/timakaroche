@@ -21,12 +21,12 @@ export default [
           'I write performance-focused code with scalability in mind — designing and building efficient, maintainable architectures.',
       },
       {
-        title: 'React',
+        title: 'React / React Router / Context API',
         description:
           'I work confidently with React: component architecture, FSD (Feature-Sliced Design), Hooks, and state management. I understand lifecycle, side effects, and build scalable, maintainable applications.',
       },
       {
-        title: 'Minista SSG / Vite',
+        title: 'Vite / Minista SSG',
         description:
           'I leverage modern build tools for rapid development and optimized production builds.',
       },
